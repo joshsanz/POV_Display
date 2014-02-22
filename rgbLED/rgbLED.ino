@@ -318,7 +318,7 @@ void heart3(int i, int j) {
     digitalWrite(r2, 1);
   } else if (i == 6 && j > 12 && j < 18) {
     digitalWrite(r2, 1);
-  } else if (i == 8 && j > 14 && j < 16) {
+  } else if (i == 7 && j > 13 && j < 17) {
     digitalWrite(r2, 1);
   } else if (i == 8 && j == 15) {
     digitalWrite(r2, 1);
