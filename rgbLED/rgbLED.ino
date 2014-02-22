@@ -362,12 +362,12 @@ void loop() {
   digitalWrite(b1, 0);
   digitalWrite(b2, 0);
   for (j = 0; j < 32; j++) {
-    if(light < 100){
+    if(light < 550){
       digitalWrite(r1,0);
       digitalWrite(r2,0);
-    } else if(light<300) {
+    } else if(light<750) {
       heart1(i,j);
-    } else if(light<500) {
+    } else if(light<950) {
       heart2(i,j);
     } else {
       heart3(i,j);
