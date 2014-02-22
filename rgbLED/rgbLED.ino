@@ -43,7 +43,7 @@ digitalWrite(B,0);
 digitalWrite(C,1);
 digitalWrite(D,0);
 }else if(i==5) {
-  Serial.println("i=5");
+  //Serial.println("i=5");
 digitalWrite(A,1);
 digitalWrite(B,0);
 digitalWrite(C,1);
@@ -74,7 +74,7 @@ digitalWrite(B,1);
 digitalWrite(C,0);
 digitalWrite(D,1);
 }else if(i==11) {
-  Serial.println("i=11");
+  //Serial.println("i=11");
 digitalWrite(A,1);
 digitalWrite(B,1);
 digitalWrite(C,0);
@@ -124,21 +124,22 @@ void loop() {
   // put your main code here, to run repeatedly:
   int j;
   for(j=0;j<32;j++) {
-	digitalWrite(r1,1);
-	digitalWrite(r2,1);
-	digitalWrite(g1,0);
-	digitalWrite(g2,0);
+	digitalWrite(r1,0);
+	digitalWrite(r2,0);
+	digitalWrite(g1,1);
+	digitalWrite(g2,1);
 	digitalWrite(b1,0);
 	digitalWrite(b2,0);
 	//delayMicroseconds(10);
-	if(i==1 && j==10) {
+	if(i==10 && j==10) {
+                //Serial.println("white");
 		digitalWrite(r1,1);
 		digitalWrite(r2,1);
-		digitalWrite(g1,1);
-		digitalWrite(g2,1);
-		digitalWrite(b1,1);
-		digitalWrite(b2,1);
-		//delayMicroseconds(10);
+		digitalWrite(g1,0);
+		digitalWrite(g2,0);
+		digitalWrite(b1,0);
+		digitalWrite(b2,0);
+		//delayMicroseconds(1);
 	}
 	digitalWrite(CLK,1);
 	//delayMicroseconds(10);
