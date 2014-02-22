@@ -109,8 +109,8 @@ const int Heart3[] = {
 */
 const int r1 = 52;
 const int r2 = 50;
-const int g1 = 53;
-const int g2 = 51;
+const int g1 = 51;
+const int g2 = 53;
 const int b1 = 49;
 const int b2 = 48;
 // controls
@@ -371,6 +371,18 @@ void loop() {
       heart2(i,j);
     } else {
       heart3(i,j);
+    }
+    if (j==0) {
+      digitalWrite(g1,1);
+      digitalWrite(b2,1);
+    } else if(j==31){
+      digitalWrite(g2,1);
+      digitalWrite(b1,1);
+    } else {
+      digitalWrite(g2,0);
+      digitalWrite(b2,0);
+      digitalWrite(g1,0);
+      digitalWrite(b1,0);
     }
     digitalWrite(CLK, 1);
     //delayMicroseconds(10);
