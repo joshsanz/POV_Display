@@ -24,18 +24,19 @@ Photoresistor | $1.50 | Sparkfun | https://www.sparkfun.com/products/9088
 *We don’t necessarily recommend all of these items! It works with this setup, but there are a few things that we would change given the chance, so don’t go buying everything yet!
 
 In addition to the pieces listed above we also used various odds and ends from our stockroom and machine shop:
-	*LM317 adjustable voltage regulators
-	*1K potentiometer
-	*Wire
-	*Scrap wood
-	*Scrap sheet metal
-	*Wood screws
-	*Epoxy
-	*Hand drill/drill press
-	*Jointer
-	*Mill
-	*Bandsaw
-	*Sheet metal bender
+
+* LM317 adjustable voltage regulators
+* 1K potentiometer
+* Wire
+* Scrap wood
+* Scrap sheet metal
+* Wood screws
+* Epoxy
+* Hand drill/drill press
+* Jointer
+* Mill
+* Bandsaw
+* Sheet metal bender
 
 The first thing to note is that this project might work just as well with an Arduino Uno. 
 The DUE’s advantage is a faster clock speed and more pins if you want to connect other devices to the 
