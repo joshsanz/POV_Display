@@ -44,3 +44,26 @@ Second, we had some issues with our motor choice. We tried several different mot
 Finally, remember that using these items was the easiest way for us to go about completing this project but there are definitely alternatives if you don’t have access to all of these things!
 
 ####Methods
+
+1. _Using the LED Array_
+	The LED array contains 32*32*3=3072 separate LEDs. This is way too many to drive all at once, so it uses 12 LED drivers, each capable of controlling 16 LEDs at once, for a total of 192 LEDs driven at a time - exactly enough for two rows of the display. Four address bits are used to control which pair of rows is being driven at any given time. 
+	The LED drivers take in a clock signal, which is used to clock in the 32 columns of each row (the two signals for each rgb color account for the total of 192 LEDs). After an entire row has been clocked in, the display is disabled, a latch signal is toggled on and off again, and the row address is set. The display is then enabled and the chosen row of LEDs is driven. In order to give the impression of an entire display being on, the rows are cycled through very quickly, hence the minimum processor clock speed of 16 MHz. Sample code can be found in our github repo, or (here)[http://www.google.com/url?q=http%3A%2F%2Fwww.rayslogic.com%2Fpropeller%2FProgramming%2FAdafruitRGB%2FAdafruitRGB.htm&sa=D&sntz=1&usg=AFQjCNGaue4Mzry9ocuIhO-xa-Fn3XG1CQ]. The Adafruit website has instructions for wiring the display to an Arduino (here)[http://www.google.com/url?q=http%3A%2F%2Flearn.adafruit.com%2F32x16-32x32-rgb-led-matrix%3Fview%3Dall&sa=D&sntz=1&usg=AFQjCNGtINYJXx6uQs6b5SaGDnDzgOfYKw].
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
