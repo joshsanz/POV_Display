@@ -149,7 +149,7 @@ project but there are definitely alternatives if you don’t have access to all 
 #### The Final Product
 When everything is put together, the LED array should display a large heart with green and blue bars 
 on either side. When the whole thing starts to spin the effect is quite impressive. The working POV 
-display can be seen in this [![youtube video](http://img.youtube.com/vi/http://youtu.be/9jRxJ01g6mY/0.jpg)](http://youtu.be/9jRxJ01g6mY).
+display can be seen in this [youtube video](http://youtu.be/9jRxJ01g6mY).
 
 	
 	
