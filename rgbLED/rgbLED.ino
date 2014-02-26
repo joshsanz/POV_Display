@@ -356,18 +356,19 @@ void loop() {
   int index2;
   int light;
   light = analogRead(8);
+  light = light*4;
   //Serial.println(light);
   digitalWrite(g1, 0);
   digitalWrite(g2, 0);
   digitalWrite(b1, 0);
   digitalWrite(b2, 0);
   for (j = 0; j < 32; j++) {
-    if(light < 550){
+    if(light < 800){
       digitalWrite(r1,0);
       digitalWrite(r2,0);
-    } else if(light<750) {
+    } else if(light<1500) {
       heart1(i,j);
-    } else if(light<950) {
+    } else if(light<3000) {
       heart2(i,j);
     } else {
       heart3(i,j);
