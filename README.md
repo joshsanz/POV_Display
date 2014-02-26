@@ -77,18 +77,91 @@ project but there are definitely alternatives if you don’t have access to all 
 	in the center of the piece of wood at the center of the array as well! Once both pieces are attached, really
 	try to make sure that your LED array is vertically straight! You can fix it later (like we did), but it’s easier if 
 	you get it right the first time.
-	![Array epoxied into a piece of wood for increased stability. A second piece of wood was later epoxied to the top of the array.]
 	
-	![frame](https://github.com/joshsanz/POV_Display/blob/master/pictures/assembled%20frame_alt.jpg?raw=true)
+	![Array epoxied into a piece of wood for increased stability. A second piece of wood was later epoxied to the top of the array.](https://github.com/joshsanz/POV_Display/blob/master/pictures/wood%20base.jpg?raw=true)
+	
+	The next step is to build the rotating base for the array to sit on. A hole the size of the larger end of the 
+	slip ring should be bored out of a piece of wood thick enough that the slip ring can fit completely inside 
+	the bored out hole. A hole should also be drilled through the side of the same piece to allow the wires to be accessed more easily. Place the larger end of the slip ring into the large hole and run the wires out through the smaller hole. The flat, black disk should sit directly on top of the wood. Epoxy this in place. Be careful not to get any epoxy into a place that could keep the slip ring from turning!
+	
+	Then, take a smaller piece of wood and drill a hole slightly larger than the size of the smaller end of the 
+	slip ring. Chisel a channel out from the center hole to the edge of the piece of wood. Slide this over the
+	smaller end of the slip ring, pulling the wires through the hole and down the channel. Epoxy the piece of
+	wood to the small end of the slip ring being careful not to get any epoxy into a place that could keep the
+	slip ring from turning. The result should like something like Figure 2.
+	
+	![Figure 2: Spinning base for LED array](https://github.com/joshsanz/POV_Display/blob/master/pictures/wood%20spinner.jpg?raw=true)
+	
+	Once the epoxy has dried completely, you can attach the two parts of the frame that you have made so 
+	far. The result should look something like Figure 3. The lower slotted piece of wood attached to the LED
+	array should be epoxied directly onto the smaller piece of the spinning base. The wires should come out
+	between the two pieces of wood using the channel you created. As you can see in Figure 3, our display
+	also has two small wooden shims between the two parts of the base. This was to fix a forward tilt we 
+	saw in our array after epoxying it into the two slotted pieces of wood.
+	
+	![Figure 3: Spinning base and array base attachment with wooden shims.](https://github.com/joshsanz/POV_Display/blob/master/pictures/shims.jpg?raw=true)
+	
+	Next, you’ll need to put it all together with a motor base. Take a piece of particle board (or any
+	other heavy material) and create a wooden frame that is both tall enough and wide enough for 
+	your LED array to spin in. This should look like Figure 4.
+	
+	![Figure 4: Assembled LED array base.](https://github.com/joshsanz/POV_Display/blob/master/pictures/assembled%20frame.jpg?raw=true)
+	
+	Once you have done this you need to find the place where the array spins under the top piece of 
+	wood the most easily. Our array is very close to the top bar because of the short shaft of the motor
+	and it took a bit of sanding and careful placement to get something that would spin well. After identifying
+	the best spot, screw the piece with the slip ring in it into place through the particle board.
+	
+	Finally, the motor needs to be attached to the array and frame. We used a piece of sheet metal bent 
+	around the motor and screwed into the wood to hold up the motor and a small piece of wood with a
+	tooth that fit into a space in the motor casing to keep the motor from spinning. The motor shaft was
+	epoxied into the hole in the center of the top piece of slotted wood attached to the LED array. In the 
+	end, you should get something that looks like this:
+	
+	![Figure 5: Fully assembled and lit up display (not spinning).](https://github.com/joshsanz/POV_Display/blob/master/pictures/complete%20device.jpg?raw=true)
+	
+	If you’re having trouble getting this to spin well - sand it! We found that once it was assembled it was
+	very easy to sand. We just put sandpaper between two rotating pieces that we thought should rotate 
+	better and spun the display until they rotated better! You can also try adding some grease to the area
+	around the slip ring although we’re not sure how much this actually helped. In the end, your display
+	should spin very easily. If it doesn’t, keep sanding! It’ll be easier on your motor!
 
+3. _The Light Sensor_
+	The light sensor is the easiest component to put together. We created a voltage divider from the 
+	1k photoresistor in series with a TBD resistor. One side of the photoresistor is hook up to 5V. The
+	junction between the two is hooked up to one of the slip ring wires and sent to an analog in pin on 
+	the Arduino, and the other side of the TBD resistor is sent to ground. We then read in the analog voltage 
+	from this circuit and used it to select the size of heart on the LED array. More light meant a bigger heart
+	and less light would shrink the heart down to nothing.
 
+4. _Power_
+	If you don’t plan to have the POV display in an area with easy access to a DC power supply,
+	you can use a laptop charger (which typically puts out 19.5V) and some voltage regulators to 
+	step down the voltage to a level safe for the Arduino and LED array. We used two LM317t adjustable 
+	power regulators to bring the voltage from the power supply down to 5V. They tend to get very hot 
+	and eventually internal thermal protection circuits shut them off, so we folded some sheet metal into a
+	large heat sink which the wind from the spinning display cools. The LM317t’s require a reference voltage, 
+	which can be created using the circuit below (from the 
+	[datasheet](http://www.google.com/url?q=http%3A%2F%2Fwww.fairchildsemi.com%2Fds%2FLM%2FLM317.pdf&sa=D&sntz=1&usg=AFQjCNGEFIqn7D7w-tZoCvXJ67vesoJ49Q)).
 
+	![Figure 6: The operating circuit for the adjustable voltage regulator.](https://github.com/joshsanz/POV_Display/blob/master/pictures/voltage%20regulator%20circuite.png?raw=true)
+	
+#### The Final Product
+When everything is put together, the LED array should display a large heart with green and blue bars 
+on either side. When the whole thing starts to spin the effect is quite impressive. The working POV 
+display can be seen in this [![youtube video](http://img.youtube.com/vi/http://youtu.be/9jRxJ01g6mY/0.jpg)](http://youtu.be/9jRxJ01g6mY).
 
-
-
-
-
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
