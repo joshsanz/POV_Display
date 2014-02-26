@@ -145,6 +145,7 @@ void heart1(int i, int j) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 void setAddress(int i) {
 if(i==0) {
 digitalWrite(A,0);
@@ -229,6 +230,8 @@ digitalWrite(B,1);
 digitalWrite(C,1);
 digitalWrite(D,1);
 =======
+=======
+>>>>>>> origin/Hearts-Display
 /* logic for medium heart */
 void heart2(int i, int j) {
   if (i == 10 && j > 5 && j < 13) {
@@ -267,6 +270,9 @@ void heart2(int i, int j) {
     digitalWrite(r1, 0);
     digitalWrite(r2, 0);
   }
+<<<<<<< HEAD
+>>>>>>> origin/Hearts-Display
+=======
 >>>>>>> origin/Hearts-Display
 }
 
@@ -341,6 +347,7 @@ void setup() {
 void loop() {
   int j;
 <<<<<<< HEAD
+<<<<<<< HEAD
   for(j=0;j<32;j++) {
 	digitalWrite(r1,0);
 	digitalWrite(r2,0);
@@ -379,6 +386,8 @@ digitalWrite(OE,0);
 if(i==16) i=0;
 //delay(500);
 =======
+=======
+>>>>>>> origin/Hearts-Display
   int light;
   // read in value from photo resistor/voltage divider circuit
   light = analogRead(8);
@@ -432,6 +441,9 @@ if(i==16) i=0;
   // increment row, loop ends at 15
   ++i;
   if (i == 16) i = 0;
+<<<<<<< HEAD
+>>>>>>> origin/Hearts-Display
+=======
 >>>>>>> origin/Hearts-Display
 }
 
@@ -546,4 +558,8 @@ const int Heart3[] = {
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 };
+<<<<<<< HEAD
 */
+=======
+*/
+>>>>>>> origin/Hearts-Display
